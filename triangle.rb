@@ -14,7 +14,12 @@
 #   about_triangle_project_2.rb
 #
 def triangle(a, b, c)
-  # WRITE THIS CODE
+  sorted_lengths = [a, b, c].sort
+  raise TriangleError if (sorted_length[0] + sorted_lenghts[1]<= sorted_lengths[2])
+  raise TriangleError if (a <= 0 || b <= 0 || c <= 0)
+  return :equilateral if (a == b && b == c && a ==c)
+  return :isoceles if (a == b) || (a == c) || (b == c)
+  :scalene
 end
 
 # Error class used in part 2.  No need to change this code.
